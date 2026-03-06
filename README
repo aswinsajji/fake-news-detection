@@ -1,0 +1,54 @@
+# Fake News Detection with Explainable AI
+
+This project detects whether a news article is REAL or FAKE using a lightweight BERT model and generates an explanation using a local language model.
+The application allows users to input either text or a URL, classify the content, retrieve verified context from Wikipedia, and generate a human-readable explanation.
+
+## Features
+
+- Fake news classification using BERT-tiny
+- Explainable AI using a local language model
+- Retrieval-Augmented Generation (RAG)
+- Web scraping for article extraction
+- Streamlit web interface
+
+## Tech Stack
+
+Python  
+Streamlit  
+Transformers (Hugging Face)  
+BeautifulSoup  
+Wikipedia API  
+Torch
+
+## How it Works
+
+1. User enters article text or URL
+2. Article is classified as REAL or FAKE using a BERT model
+3. Relevant context is retrieved from Wikipedia
+4. A local language model generates an explanation
+5. A moderation report can be downloaded
+
+## Installation
+
+Clone the repository:
+git clone https://github.com/aswinsajji/fake-news-detection
+
+Install dependencies:
+pip install -r requirements.txt
+
+Run the application:
+streamlit run app.py
+
+## Example Use Case
+
+This tool can assist:
+- social media moderators
+- journalists
+- fact-checking organizations
+by quickly identifying suspicious content and providing explainable results.
+
+## Future Improvements
+
+- Improve RAG retrieval using vector databases
+- Add news dataset training
+- Deploy on cloud infrastructure
